@@ -1,0 +1,123 @@
+/* Root container */
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+  background-color: #f5f5f5; /* Subtle background */
+  font-family: 'Roboto', sans-serif; /* Modern font */
+  color: #333;
+}
+
+/* Logo styling */
+.logo {
+  height: 6em;
+  padding: 1.5em;
+  will-change: filter, transform;
+  transition: filter 300ms, transform 0.3s ease-in-out;
+}
+
+.logo:hover {
+  filter: drop-shadow(0 0 2em #646cffaa);
+  transform: scale(1.1); /* Slight scale on hover */
+}
+
+.logo.react:hover {
+  filter: drop-shadow(0 0 2em #61dafbaa);
+}
+
+/* Spin animation for the logo */
+@keyframes logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+/* Reduced motion media query */
+@media (prefers-reduced-motion: no-preference) {
+  .logo.react {
+    animation: logo-spin infinite 20s linear;
+  }
+}
+
+/* Card styling */
+.card {
+  padding: 2em;
+  margin: 1.5rem auto;
+  background: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: box-shadow 0.3s ease;
+}
+
+.card:hover {
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15); /* Lift effect on hover */
+}
+
+/* Typography */
+h1, h2, h3, h4 {
+  color: #222;
+  font-weight: 700;
+  margin: 0.5em 0;
+}
+
+p, .read-the-docs {
+  color: #555;
+  line-height: 1.6;
+}
+
+.read-the-docs {
+  color: #888;
+  font-size: 0.9em;
+}
+
+/* Button styling */
+button, .button {
+  background-color: #646cff;
+  color: #fff;
+  padding: 0.75rem 1.5rem;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+button:hover, .button:hover {
+  background-color: #575fcc;
+  transform: translateY(-2px); /* Lift effect */
+}
+
+button:active, .button:active {
+  background-color: #444fad;
+}
+
+/* Responsive grid layout */
+.grid-container {
+  display: grid;
+  gap: 1.5rem;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  margin-top: 2rem;
+}
+
+/* Footer */
+.footer {
+  margin-top: 3rem;
+  padding: 1.5rem 0;
+  background-color: #222;
+  color: #f5f5f5;
+  text-align: center;
+  font-size: 0.9em;
+}
+
+.footer a {
+  color: #646cff;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.footer a:hover {
+  color: #575fcc;
+}
